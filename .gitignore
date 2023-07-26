@@ -1,0 +1,7 @@
+__pycache__
+
+# Ignore captures (/captures/*.png)
+captures/*.png
+
+# Ignore output
+output/

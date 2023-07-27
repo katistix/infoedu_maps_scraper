@@ -34,28 +34,39 @@ def save_detection(output_image, path):
     cv2.imwrite(path, output_image)
 
 
-
-def count_total_cars(image_path):
+def count_individual_vehicles(image_path):
     im = cv2.imread(image_path)
     bbox, label, conf = cv.detect_common_objects(im)
     output_image = draw_bbox(im, bbox, label, conf)
 
     save_detection(output_image, "output/output.png")
 
-
-    # preview_detection(output_image)
-
     # Vehicle types to detect
     vehicles = ['car', 'truck', 'bus']
 
+    # Return each type of vehicle count individually
+    return {v: label.count(v) for v in vehicles}
+    
+
+
+
+
+
+def count_total_vehicles(image_path):
+    v = count_individual_vehicles(image_path)
+    print(v)
+
+    return sum(v.values())
+
+
     # Count of vehicles
-    count = 0
+    # count = 0
 
-    # Iterate over the predicted labels
-    for l in label:
-        # Check if the label is a car
-        if l in vehicles:
-            count += 1
+    # # Iterate over the predicted labels
+    # for l in label:
+    #     # Check if the label is a car
+    #     if l in vehicles:
+    #         count += 1
 
-    return count
+    # return count
 

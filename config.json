@@ -1,82 +1,25 @@
 {
     "locations": [
         {
+            "id": "piata_unirii",
             "name": "Piata Unirii",
             "lat": 44.4271836,
             "lng": 26.1010159,
             "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
         },
         {
-            "name": "Piata Unirii",
+            "id": "nush",
+            "name": "Nush...",
             "lat": 44.4271836,
             "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
+            "yt_live": "https://www.youtube.com/watch?v=VQKIK3XgxGs"
         },
         {
-            "name": "Piata Unirii",
+            "id": "nush2",
+            "name": "Ceva...",
             "lat": 44.4271836,
             "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
+            "yt_live": "https://www.youtube.com/watch?v=VQKIK3XgxGs"
         }
     ]
 }

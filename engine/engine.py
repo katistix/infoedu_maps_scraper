@@ -13,7 +13,24 @@ def createDriver(headless):
     import undetected_chromedriver as uc
     print("Starting automated browser...")
     options = uc.ChromeOptions()
-    options.headless = headless
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-notifications")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--mute-audio")
+    options.add_argument("--disable-popup-blocking")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-web-security")
+    options.add_argument("--allow-running-insecure-content")
+    options.add_argument("--ignore-certificate-errors")
+    options.add_argument("--ignore-ssl-errors")
+    options.add_argument("--log-level=3")
+    options.add_argument("--silent")
+    options.add_argument("--log-path=chromedriver.log")
+    options.add_argument("--headless")
+    # options.headless = headless
     driver = uc.Chrome(options=options)
     return driver
 
@@ -23,7 +40,7 @@ def initialize(link):
         print("No link provided")
         return None
 
-    driver = createDriver(False)
+    driver = createDriver(True)
 
     driver.get(link)
     driver.implicitly_wait(10)

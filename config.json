@@ -3,23 +3,9 @@
         {
             "id": "piata_unirii",
             "name": "Piata Unirii",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
+            "latitude": 44.4271836,
+            "longitude": 26.1010159,
             "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
-        },
-        {
-            "id": "nush",
-            "name": "Nush...",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=VQKIK3XgxGs"
-        },
-        {
-            "id": "nush2",
-            "name": "Ceva...",
-            "lat": 44.4271836,
-            "lng": 26.1010159,
-            "yt_live": "https://www.youtube.com/watch?v=VQKIK3XgxGs"
         }
     ]
 }

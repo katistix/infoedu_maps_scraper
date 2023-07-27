@@ -19,6 +19,8 @@ def update_location(location_data):
         name text,
         total_cars int,
         timestamp int,
+        longitude real,
+        latitude real,
         link text
     )""")
 
@@ -28,11 +30,15 @@ def update_location(location_data):
         :name,
         :total_cars,
         :timestamp,
+        :longitude,
+        :latitude,
         :link
     ) ON CONFLICT(id) DO UPDATE SET
         name = :name,
         total_cars = :total_cars,
         timestamp = :timestamp,
+        longitude = :longitude,
+        latitude = :latitude,
         link = :link
     """, location_data)
 

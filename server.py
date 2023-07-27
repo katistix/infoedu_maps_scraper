@@ -1,7 +1,10 @@
 import sqlite3
 from flask import Flask, jsonify
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 # SQLite database file path
 DATABASE = 'database.db'
@@ -16,10 +19,19 @@ def query_database(query, params=()):
 
 @app.route('/get_locations', methods=['GET'])
 def get_locations():
+    print("get_locations")
     locations = query_database("SELECT * FROM locations")
 
     # Convert the list of tuples to a list of dictionaries
-    locations = [dict(zip(['id', 'name', 'total_cars', 'timestamp'], location)) for location in locations]
+    locations = [dict(zip([
+        'id',
+        'name',
+        'total_cars',
+        'timestamp',
+        'longitude',
+        'latitude',
+        'link'
+        ], location)) for location in locations]
     
 
     return jsonify(locations)

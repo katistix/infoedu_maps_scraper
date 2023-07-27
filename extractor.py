@@ -34,6 +34,8 @@ def extractor(location):
         "name": location["name"],
         "total_cars": total_cars,
         "timestamp": datetime.datetime.now().timestamp(),
+        "longitude": location["longitude"],
+        "latitude": location["latitude"],
         "link": location["yt_live"]
     }
 

@@ -1,13 +1,6 @@
 {
     "locations": [
         {
-            "id": "oxford_martin_school",
-            "name": "Oxford Martin School",
-            "latitude": 51.754939,
-            "longitude": -1.254351,
-            "yt_live": "https://www.youtube.com/watch?v=St7aTfoIdYQ&ab_channel=OxfordMartinSchool"
-        },
-        {
             "id": "ammanford_wales",
             "name": "Ammanford, Wales",
             "latitude": 51.788055,

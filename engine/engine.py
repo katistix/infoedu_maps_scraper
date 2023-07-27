@@ -13,7 +13,8 @@ def createDriver(headless):
     import undetected_chromedriver as uc
     print("Starting automated browser...")
     options = uc.ChromeOptions()
-    options.add_argument("--headless")
+    if headless:
+        options.add_argument("--headless")
     driver = uc.Chrome(options=options)
     return driver
 

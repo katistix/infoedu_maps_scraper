@@ -18,7 +18,8 @@ def update_location(location_data):
         id text PRIMARY KEY NOT NULL UNIQUE,
         name text,
         total_cars int,
-        timestamp int
+        timestamp int,
+        link text
     )""")
 
     # Insert the data into the table if it doesn't exist, otherwise update it
@@ -26,11 +27,13 @@ def update_location(location_data):
         :id,
         :name,
         :total_cars,
-        :timestamp
+        :timestamp,
+        :link
     ) ON CONFLICT(id) DO UPDATE SET
         name = :name,
         total_cars = :total_cars,
-        timestamp = :timestamp
+        timestamp = :timestamp,
+        link = :link
     """, location_data)
 
     # Commit the changes

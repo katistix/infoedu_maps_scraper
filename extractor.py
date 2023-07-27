@@ -33,7 +33,8 @@ def extractor(location):
         "id": location["id"],
         "name": location["name"],
         "total_cars": total_cars,
-        "timestamp": datetime.datetime.now().timestamp()
+        "timestamp": datetime.datetime.now().timestamp(),
+        "link": location["yt_live"]
     }
 
     update_location(location_data)

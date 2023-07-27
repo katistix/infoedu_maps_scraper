@@ -1,4 +1,4 @@
-from detection import count_total_cars
+from engine.detection import count_total_cars
 
 
 # Replace 'image_path' with the path to your road traffic image

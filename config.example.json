@@ -1,6 +1,13 @@
 {
     "locations": [
         {
+            "id": "piata_unirii",
+            "name": "Piata Unirii",
+            "latitude": 44.4271836,
+            "longitude": 26.1010159,
+            "yt_live": "https://www.youtube.com/watch?v=rs2be3mqryo&ab_channel=ULTRAVISIONCONSULT"
+        },
+        {
             "id": "oxford_martin_school",
             "name": "Oxford Martin School",
             "latitude": 51.754939,
@@ -13,13 +20,6 @@
             "latitude": 51.788055,
             "longitude": -4.005596,
             "yt_live": "https://www.youtube.com/watch?v=jIogw2zBPEY&ab_channel=RogerWillis"
-        },
-        {
-            "id": "manchester_deansgate",
-            "name": "Manchester Deansgate",
-            "latitude": 53.474809,
-            "longitude": -2.251705,
-            "yt_live": "https://www.youtube.com/watch?v=RVqaMCty3-Q&ab_channel=ManchesterUKWebcams"
         }
     ]
 }

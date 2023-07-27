@@ -27,9 +27,9 @@ def extractor(location):
         sleep(5)
 
     average_cars = average_cars / 5
+    driver.quit()
     
 
-    driver.quit()
     print("Saved capture to " + filename)
 
 

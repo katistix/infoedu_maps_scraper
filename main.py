@@ -21,12 +21,6 @@ locations = getLocations()
 # If all cores are busy, wait for one to finish, then start a new one,
 # Loop through all locations, and repeat every 10 minutes
 
-import json
-import os
-import threading
-import time
-from datetime import datetime, timedelta
-
 locations = None
 
 def start_extractor_threads():

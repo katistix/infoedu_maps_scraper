@@ -40,7 +40,16 @@ def initialize(link):
         print("No link provided")
         return None
 
-    driver = createDriver(True)
+
+    driver = None
+    # Try to create a driver, if it fails, try again for 3 times
+    for i in range(3):
+        try:
+            driver = createDriver(True)
+            break
+        except:
+            print("Failed to create driver, trying again...")
+            pass
 
     driver.get(link)
     driver.implicitly_wait(10)

@@ -48,8 +48,8 @@ def loop_extractor_threads():
                 
 
         start_extractor_threads()
-        # After 10 minutes, start the threads again
-        time.sleep(600)
+        # After 2 minutes, restart the threads
+        time.sleep(120)
     
 if __name__ == "__main__":
 

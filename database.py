@@ -17,7 +17,7 @@ def update_location(location_data):
     c.execute("""CREATE TABLE IF NOT EXISTS locations (
         id text PRIMARY KEY NOT NULL UNIQUE,
         name text,
-        total_cars int,
+        traffic real,
         timestamp int,
         longitude real,
         latitude real,
@@ -28,14 +28,14 @@ def update_location(location_data):
     c.execute("""INSERT INTO locations VALUES (
         :id,
         :name,
-        :total_cars,
+        :traffic,
         :timestamp,
         :longitude,
         :latitude,
         :link
     ) ON CONFLICT(id) DO UPDATE SET
         name = :name,
-        total_cars = :total_cars,
+        traffic = :traffic,
         timestamp = :timestamp,
         longitude = :longitude,
         latitude = :latitude,

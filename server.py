@@ -26,7 +26,7 @@ def get_locations():
     locations = [dict(zip([
         'id',
         'name',
-        'total_cars',
+        'traffic',
         'timestamp',
         'longitude',
         'latitude',

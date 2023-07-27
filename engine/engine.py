@@ -10,7 +10,6 @@ CAPTURE_DIR = "captures/"
 
 
 def createDriver(headless):
-    import undetected_chromedriver as uc
     print("Starting automated browser...")
     options = uc.ChromeOptions()
     if headless:

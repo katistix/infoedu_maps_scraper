@@ -4,7 +4,7 @@ import os
 import threading
 import time
 from datetime import datetime
-from extractor import extractor
+from engine.extractor import extractor
 
 def getLocations():
     with open("config.json") as config_file:
